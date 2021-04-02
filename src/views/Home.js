@@ -81,11 +81,12 @@ function Home() {
       <div className="logo-continer">
         <img src={bettorsightLogo} alt="" />
       </div>
+      <h4 className="center head">xROI Calculator</h4>
       <div className="row-flex">
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">bet odds</h5>
-            <div className="card round-card">
+            <div className="card round-card border-black">
               <div className="card-content">
                 <input
                   className="center"
@@ -101,7 +102,7 @@ function Home() {
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">same side closing</h5>
-            <div className="card round-card">
+            <div className="card round-card border-black">
               <div className="card-content">
                 <input
                   className="center"
@@ -117,7 +118,7 @@ function Home() {
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">other side closing</h5>
-            <div className="card round-card">
+            <div className="card round-card border-black">
               <div className="card-content">
                 <input
                   className="center"
@@ -135,18 +136,18 @@ function Home() {
       <div className="col-flex">
         <div style={result2boxes_style} className="">
           <h5 className="center">Margin</h5>
-          <div className="card round-card">
+          <div className="card round-card border-black">
             <div className="card-content">
-              <h5 className="center">{(margin && round3(margin)) || '--'}</h5>
+              <h5 className="center head">{(margin && round3(margin)) || '--'}</h5>
             </div>
           </div>
         </div>
         <div className="spacing-50px"></div>
         <div style={result2boxes_style} className="">
           <h5 className="center">Xroi</h5>
-          <div className="card round-card">
+          <div className="card round-card border-black">
             <div className="card-content">
-            <h5 className="center">{(xroi && <>{round3(xroi)} %</>) || '--'}</h5>
+            <h5 className="center head">{(xroi && <>{round3(xroi)} %</>) || '--'}</h5>
             </div>
           </div>
         </div>

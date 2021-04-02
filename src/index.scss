@@ -13,7 +13,7 @@ body {
   overflow-y: auto;
 }
 
-.border-1px-black{
+.border-black{
   border: 1px solid black;
 }
 
@@ -61,4 +61,8 @@ body {
     max-height: 700px;
     height: 10vh;
   }
+}
+
+.head{
+  font-weight: 700;
 }
