@@ -55,7 +55,7 @@ function Home() {
     margin,
   }) => {
     if (!decimal_1 || !decimal_2 || !decimal_3 || !margin) return "";
-    return decimal_1 / (decimal_2 * margin) - 1;
+    return ((decimal_1 / (decimal_2 * margin) - 1)*100);
   };
 
   useEffect(() => {
@@ -146,7 +146,7 @@ function Home() {
           <h5 className="center">Xroi</h5>
           <div className="card round-card">
             <div className="card-content">
-            <h5 className="center">{(xroi && round3(xroi)) || '--'}</h5>
+            <h5 className="center">{(xroi && <>{round3(xroi)} %</>) || '--'}</h5>
             </div>
           </div>
         </div>
