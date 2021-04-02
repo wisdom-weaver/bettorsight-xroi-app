@@ -106,6 +106,12 @@ body {
   height: 8vh;
 }
 
+.align-items-flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .head {
   font-weight: 700;
 }

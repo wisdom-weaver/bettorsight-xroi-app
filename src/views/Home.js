@@ -85,51 +85,51 @@ function Home() {
         <div className="btn large-btn black-btn m5">click here</div>
       </div>
       <h5 className="center head">xROI Calculator</h5>
-      <div className="row-flex">
+      <div className="row-flex align-items-flex-end">
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
-            <h5 className="center">bet odds</h5>
+            <p className="center">bet odds</p>
             <div className="card round-card border-black">
-              <div className="card-content">
+              <div className="">
                 <input
                   className="center"
                   onChange={(e) => set_bet_odds(e.target.value)}
                   type="text"
                   value={bet_odds}
                 />
-                <p className="center">{decimal_1 && round2(decimal_1)}</p>
+                <p className="spacing-20px center">{decimal_1 && round2(decimal_1)}</p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
-            <h5 className="center">same side closing</h5>
+            <p className="center">same side closing</p>
             <div className="card round-card border-black">
-              <div className="card-content">
+              <div className="">
                 <input
                   className="center"
                   onChange={(e) => set_same_side(e.target.value)}
                   type="text"
                   value={same_side}
                 />
-                <p className="center">{decimal_2 && round2(decimal_2)}</p>
+                <p className="spacing-20px center">{decimal_2 && round2(decimal_2)}</p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
-            <h5 className="center">other side closing</h5>
+            <p className="center">other side closing</p>
             <div className="card round-card border-black">
-              <div className="card-content">
+              <div className="">
                 <input
                   className="center"
                   onChange={(e) => set_other_side(e.target.value)}
                   type="text"
                   value={other_side}
                 />
-                <p className="center">{decimal_3 && round2(decimal_3)}</p>
+                <p className="spacing-20px  center">{decimal_3 && round2(decimal_3)}</p>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ function Home() {
         <div style={result2boxes_style} className="">
           <h5 className="center">Margin</h5>
           <div className="card round-card border-black">
-            <div className="card-content">
+            <div className="">
               <h5 className="center head">
                 {(margin && round3(margin)) || "--"}
               </h5>
@@ -149,7 +149,7 @@ function Home() {
         <div style={result2boxes_style} className="">
           <h5 className="center">Xroi</h5>
           <div className="card round-card border-black">
-            <div className="card-content">
+            <div className="">
               <h5 className="center head">
                 {(xroi && <>{round3(xroi)} %</>) || "--"}
               </h5>
