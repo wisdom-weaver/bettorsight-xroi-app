@@ -77,15 +77,14 @@ function Home() {
 
   return (
     <div>
-      <div className="spacing-10px"></div>
       <div className="logo-continer">
         <img src={bettorsightLogo} alt="" />
       </div>
       <div className="center">
-        <p className="center flow-text">Best Odds</p>
+        <p className="center">Best Odds</p>
         <div className="btn large-btn black-btn m5">click here</div>
       </div>
-      <h4 className="center head">xROI Calculator</h4>
+      <h5 className="center head">xROI Calculator</h5>
       <div className="row-flex">
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
