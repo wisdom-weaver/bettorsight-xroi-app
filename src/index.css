@@ -78,4 +78,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.round-card {
+  border-radius: 15px;
+}
+
+.logo-continer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.logo-continer img {
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+  max-width: 100%;
+  max-height: 700px;
+  height: 10vh;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import bettorsightLogo from '../static/bettorsight-logo-dark.svg'
+import { round2, round3 } from '../utils/utils'
 
 function Home() {
   const parts3_style = {
@@ -76,11 +78,14 @@ function Home() {
   return (
     <div>
       <div className="spacing-30px"></div>
+      <div className="logo-continer">
+        <img src={bettorsightLogo} alt="" />
+      </div>
       <div className="row-flex">
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">bet odds</h5>
-            <div className="card">
+            <div className="card round-card">
               <div className="card-content">
                 <input
                   className="center"
@@ -88,7 +93,7 @@ function Home() {
                   type="text"
                   value={bet_odds}
                 />
-                <p className="center">{decimal_1}</p>
+                <p className="center">{decimal_1 && round2(decimal_1) }</p>
               </div>
             </div>
           </div>
@@ -96,7 +101,7 @@ function Home() {
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">same side closing</h5>
-            <div className="card">
+            <div className="card round-card">
               <div className="card-content">
                 <input
                   className="center"
@@ -104,7 +109,7 @@ function Home() {
                   type="text"
                   value={same_side}
                 />
-                <p className="center">{decimal_2}</p>
+                <p className="center">{decimal_2 && round2(decimal_2)}</p>
               </div>
             </div>
           </div>
@@ -112,7 +117,7 @@ function Home() {
         <div className="flex-grow-1 center">
           <div style={parts3_style} className="">
             <h5 className="center">other side closing</h5>
-            <div className="card">
+            <div className="card round-card">
               <div className="card-content">
                 <input
                   className="center"
@@ -120,7 +125,7 @@ function Home() {
                   type="text"
                   value={other_side}
                 />
-                <p className="center">{decimal_3}</p>
+                <p className="center">{decimal_3 && round2(decimal_3)}</p>
               </div>
             </div>
           </div>
@@ -130,18 +135,18 @@ function Home() {
       <div className="col-flex">
         <div style={result2boxes_style} className="">
           <h5 className="center">Margin</h5>
-          <div className="card">
+          <div className="card round-card">
             <div className="card-content">
-              <h5 className="center">{margin}</h5>
+              <h5 className="center">{(margin && round3(margin)) || '--'}</h5>
             </div>
           </div>
         </div>
         <div className="spacing-50px"></div>
         <div style={result2boxes_style} className="">
           <h5 className="center">Xroi</h5>
-          <div className="card">
+          <div className="card round-card">
             <div className="card-content">
-            <h5 className="center">{xroi}</h5>
+            <h5 className="center">{(xroi && round3(xroi)) || '--'}</h5>
             </div>
           </div>
         </div>
