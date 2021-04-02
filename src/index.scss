@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.border-1px-black{
+  border: 1px solid black;
+}
+
+
+.spacing-5px{ min-height: 5px; }
+.spacing-10px{ min-height: 10px; }
+.spacing-20px{ min-height: 20px; }
+.spacing-30px{ min-height: 30px; }
+.spacing-40px{ min-height: 40px; }
+.spacing-50px{ min-height: 50px; }
+
+.flex-grow-1{
+  flex-grow: 1;
+}
+
+.row-flex{
+  display:flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+
+.col-flex{
+  display:flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
