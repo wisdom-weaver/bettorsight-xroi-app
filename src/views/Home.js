@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import bettorsightLogo from '../static/bettorsight-logo-dark.svg'
-import { round2, round3 } from '../utils/utils'
+import bettorsightLogo from "../static/bettorsight-logo-dark.svg";
+import { round2, round3 } from "../utils/utils";
 
 function Home() {
   const parts3_style = {
@@ -55,7 +55,7 @@ function Home() {
     margin,
   }) => {
     if (!decimal_1 || !decimal_2 || !decimal_3 || !margin) return "";
-    return ((decimal_1 / (decimal_2 * margin) - 1)*100);
+    return (decimal_1 / (decimal_2 * margin) - 1) * 100;
   };
 
   useEffect(() => {
@@ -81,6 +81,10 @@ function Home() {
       <div className="logo-continer">
         <img src={bettorsightLogo} alt="" />
       </div>
+      <div className="center">
+        <p className="center flow-text">Best Odds</p>
+        <div className="btn large-btn black-btn m5">click here</div>
+      </div>
       <h4 className="center head">xROI Calculator</h4>
       <div className="row-flex">
         <div className="flex-grow-1 center">
@@ -94,7 +98,7 @@ function Home() {
                   type="text"
                   value={bet_odds}
                 />
-                <p className="center">{decimal_1 && round2(decimal_1) }</p>
+                <p className="center">{decimal_1 && round2(decimal_1)}</p>
               </div>
             </div>
           </div>
@@ -138,16 +142,20 @@ function Home() {
           <h5 className="center">Margin</h5>
           <div className="card round-card border-black">
             <div className="card-content">
-              <h5 className="center head">{(margin && round3(margin)) || '--'}</h5>
+              <h5 className="center head">
+                {(margin && round3(margin)) || "--"}
+              </h5>
             </div>
           </div>
         </div>
-        <div className="spacing-50px"></div>
+        <div className="spacing-20px"></div>
         <div style={result2boxes_style} className="">
           <h5 className="center">Xroi</h5>
           <div className="card round-card border-black">
             <div className="card-content">
-            <h5 className="center head">{(xroi && <>{round3(xroi)} %</>) || '--'}</h5>
+              <h5 className="center head">
+                {(xroi && <>{round3(xroi)} %</>) || "--"}
+              </h5>
             </div>
           </div>
         </div>

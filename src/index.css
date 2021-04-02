@@ -108,4 +108,10 @@ body {
 
 .head {
   font-weight: 700;
+}
+
+.black-btn {
+  text-transform: initial !important;
+  border-radius: 8px !important;
+  background-color: black !important;
 }/*# sourceMappingURL=index.css.map */
