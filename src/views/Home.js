@@ -77,7 +77,7 @@ function Home() {
 
   return (
     <div>
-      <div className="spacing-30px"></div>
+      <div className="spacing-10px"></div>
       <div className="logo-continer">
         <img src={bettorsightLogo} alt="" />
       </div>
@@ -136,7 +136,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="spacing-50px"></div>
       <div className="col-flex">
         <div style={result2boxes_style} className="">
           <h5 className="center">Margin</h5>
@@ -148,7 +147,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="spacing-20px"></div>
         <div style={result2boxes_style} className="">
           <h5 className="center">Xroi</h5>
           <div className="card round-card border-black">
